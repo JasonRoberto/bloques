@@ -1,5 +1,5 @@
 import unittest
-from bloques import ordenar_bloques_arreglo
+from procesador_bloques import ordenar_bloques_arreglo
 
 class TestOrdenarBloques(unittest.TestCase):
 

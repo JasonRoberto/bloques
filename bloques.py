@@ -8,7 +8,6 @@ def ordenar_bloques_arreglo(myArray):
             bloque_actual = []
         else:
             bloque_actual.append(numero)
-            bloque_actual.sort()
 
     else:
         bloques_procesados.append(procesar(bloque_actual))
@@ -16,6 +15,7 @@ def ordenar_bloques_arreglo(myArray):
     return " ".join(bloques_procesados)
 
 def procesar(bloque_actual) -> str:
+    bloque_actual.sort()
     if not bloque_actual:
         return "X"
     return "".join(map(str, bloque_actual))
